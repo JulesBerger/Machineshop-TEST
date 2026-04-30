@@ -16,31 +16,40 @@ $ucla-gold: #FFD100;
   border: 1px solid $ucla-blue;
 }
 
-section.main-content h1, section.main-content h2, section.main-content h3 {
+h1, h2, h3 {
   color: $ucla-blue;
 }
 
 /* Responsive sizing */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
 }
 
-section.main-content {
+.wrapper {
   max-width: 100%;
-  padding: 2rem 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+main {
+  max-width: 100%;
 }
 
 /* Mobile devices */
 @media (max-width: 768px) {
-  section.main-content {
+  body {
     padding: 1.5rem 1rem;
   }
 
-  section.main-content h1 {
+  h1 {
     font-size: 28px;
   }
 
-  section.main-content h2 {
+  h2 {
     font-size: 24px;
   }
 
@@ -51,14 +60,14 @@ section.main-content {
 
 /* Tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
-  section.main-content {
+  .wrapper {
     max-width: 95%;
   }
 }
 
 /* Desktops */
 @media (min-width: 1025px) {
-  section.main-content {
+  .wrapper {
     max-width: 1200px;
   }
 }
@@ -78,4 +87,12 @@ table {
 
 table td, table th {
   padding: 0.75rem;
+  word-wrap: break-word;
+}
+
+/* Ensure content area is responsive */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
 }
