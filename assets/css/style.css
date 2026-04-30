@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Responsive image styling for hero and all images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure images don't overflow container */
+.content {
+  overflow-x: hidden;
+}
