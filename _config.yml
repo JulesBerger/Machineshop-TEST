@@ -3,8 +3,11 @@ description: Precision instrumentation, design, and fabrication services.
 remote_theme: pages-themes/Modernist
 google_analytics: 
 show_downloads: false
+
 header_pages:
   - index.md
   - equipment.md
   - safety.md
   - contact.md
+  
+ucla_blue: "#2774AE"
