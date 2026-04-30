@@ -4,26 +4,34 @@
 
 ---
 
-## 🛠 Services & Capabilities
+## Services & Capabilities
 We provide high-precision machining and design assistance for research instrumentation across the UCLA campus.
 
 | Precision Machining | Specialized Fabrication | Design Support |
 | :--- | :--- | :--- |
 | CNC Milling & Turning | TIG / MIG Welding | CAD/CAM Consultation |
-| Manual Lathe Work | 3D Printing | Waterjet Cutting | Prototype Development |
+| Manual Lathe Work | 3D Printing | Waterjet Cutting | Rapid Prototyping |
 
 ---
 
-## 📋 How to Submit a Project
-To ensure your project is scheduled efficiently, please follow these steps:
+## Start a Project
+To submit a work order, please fill out our [Project Request Form](URL-HERE) or visit us in **Kaplan Hall, Room A08**.
 
-1. **Submit a Request:** [Click here to fill out the Work Order Form](https://your-link-here.com)
-2. **Consultation:** Schedule a 15-minute intake meeting via [Email](mailto:your-email@ucla.edu).
-3. **Materials:** Dropping off materials? Please label them with your PI's name and Dept.
+## 3D print request
+Fill out and upload your file(s) using [This form](URL-Here) 
+*.3mf, .stl, .oltp, .stp, .step, .svg, .amf, .obj files supported* 
+
+## How to Request Access
+You can request after hours and weekend access using [This Form](URL-HERE)
+*Shop Supervisor and PI sign-off required* 
+
+## Shop Rates
+[**View Shop Rates**](/rates)
+
 
 ---
 
-## 📍 Location & Hours
+## Location & Hours
 **Kaplan Hall, Room A08** **Monday – Friday:** 7:00 AM – 3:30 PM **Closed:** 12:00 PM – 1:00 PM (Lunch)
 
 
