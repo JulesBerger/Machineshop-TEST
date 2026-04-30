@@ -29,14 +29,12 @@ You can request after hours and weekend access using [This Form](URL-HERE)
 ## Shop Rates
 [**View Shop Rates**](/rates)
 
-
 ---
 
 ## Location & Hours
 **Kaplan Hall, Room A08** 
 **Monday – Friday:** 7:00 AM – 3:30 PM 
 **Closed:** 12:00 PM – 1:00 PM (Lunch)
-
 
 ---
 
