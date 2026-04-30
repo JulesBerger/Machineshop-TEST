@@ -19,3 +19,63 @@ $ucla-gold: #FFD100;
 section.main-content h1, section.main-content h2, section.main-content h3 {
   color: $ucla-blue;
 }
+
+/* Responsive sizing */
+body {
+  font-size: 16px;
+}
+
+section.main-content {
+  max-width: 100%;
+  padding: 2rem 1rem;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  section.main-content {
+    padding: 1.5rem 1rem;
+  }
+
+  section.main-content h1 {
+    font-size: 28px;
+  }
+
+  section.main-content h2 {
+    font-size: 24px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  section.main-content {
+    max-width: 95%;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  section.main-content {
+    max-width: 1200px;
+  }
+}
+
+/* Ensure images scale responsively */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make tables responsive */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  padding: 0.75rem;
+}
