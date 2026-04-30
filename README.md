@@ -20,6 +20,9 @@ Fill out and upload your file(s) using [This form](URL-Here)
 You can request after hours and weekend access using [This Form](URL-HERE)
 *Shop Supervisor and PI sign-off required* 
 
+## Shop Rates
+[**View Shop Rates**](/rates)
+
 ## Shop Hours
 * **Monday – Friday:** 7:00 AM – 3:30 PM
 * **Closed:** 12:00 PM – 1:00 PM (Lunch)
