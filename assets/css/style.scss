@@ -1,0 +1,14 @@
+SCSS
+
+---
+---
+@import "{{ site.theme }}";
+
+.page-header {
+  background-color: #2774AE; // UCLA Blue
+  background-image: none;
+}
+
+section.main-content h2 {
+  color: #2774AE;
+}
