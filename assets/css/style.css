@@ -14,3 +14,10 @@ img {
 .content {
   overflow-x: hidden;
 }
+
+/* Hide "View the project on GitHub" button */
+.github-corner,
+a.github-corner,
+[href*="github.com"] svg {
+  display: none !important;
+}
