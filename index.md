@@ -9,8 +9,8 @@ We provide high-precision machining and design assistance for research instrumen
 
 | Precision Machining | Specialized Fabrication | Design Support |
 | :--- | :--- | :--- |
-| CNC Milling & Turning | TIG / MIG Welding | CAD/CAM Consultation |
-| Manual Lathe Work | 3D Printing | Waterjet Cutting | Rapid Prototyping |
+| CNC Milling & Turning | TIG / MIG Welding | Manual Lathe Work |
+| 3D Printing/Rapid Prototyping | Waterjet Cutting | Training |
 
 ---
 
@@ -32,7 +32,9 @@ You can request after hours and weekend access using [This Form](URL-HERE)
 ---
 
 ## Location & Hours
-**Kaplan Hall, Room A08** **Monday – Friday:** 7:00 AM – 3:30 PM **Closed:** 12:00 PM – 1:00 PM (Lunch)
+**Kaplan Hall, Room A08** 
+**Monday – Friday:** 7:00 AM – 3:30 PM 
+**Closed:** 12:00 PM – 1:00 PM (Lunch)
 
 
 ---
