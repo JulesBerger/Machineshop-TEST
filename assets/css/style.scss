@@ -2,11 +2,20 @@
 ---
 @import "{{ site.theme }}";
 
+$ucla-blue: #2774AE;
+$ucla-gold: #FFD100;
+
 .page-header {
-  background-color: #2774AE; // UCLA Blue
+  background-color: $ucla-blue;
   background-image: none;
 }
 
-section.main-content h2 {
-  color: #2774AE;
+.btn {
+  background-color: $ucla-gold;
+  color: $ucla-blue !important;
+  border: 1px solid $ucla-blue;
+}
+
+section.main-content h1, section.main-content h2, section.main-content h3 {
+  color: $ucla-blue;
 }
