@@ -6,10 +6,11 @@ plugins:
 google_analytics: 
 show_downloads: false
 
-header_pages:
-  - index.md
-  - equipment.md
-  - safety.md
-  - contact.md
+<nav>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/equipment/' | relative_url }}">Equipment</a>
+  <a href="{{ '/safety/' | relative_url }}">Safety</a>
+  <a href="{{ '/contact/' | relative_url }}">Contact</a>
+</nav>
   
 ucla_blue: "#2774AE"
