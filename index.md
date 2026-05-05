@@ -1,6 +1,4 @@
-# Physical Sciences Machine Shop
-### UCLA Division of Physical Sciences
-![UCLA Machine Shop Interior](Hero_v2.jpg)
+![UCLA Machine Shop Interior](Hero_V2.jpg)
 
 ---
 
