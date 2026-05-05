@@ -1,5 +1,43 @@
 ---
 ---
+
+@import "minima";
+
+/* UCLA colors */
+:root {
+  --ucla-blue: #2774AE;
+  --ucla-gold: #FFD100;
+}
+
+/* Header / site title */
+.site-title {
+  color: var(--ucla-blue) !important;
+  font-weight: 600;
+}
+
+/* Navigation links */
+.site-nav .page-link {
+  color: var(--ucla-blue);
+}
+
+.site-nav .page-link:hover {
+  color: var(--ucla-gold);
+}
+
+/* Links across site */
+a {
+  color: var(--ucla-blue);
+}
+
+a:hover {
+  color: var(--ucla-gold);
+}
+
+/* Optional: header underline */
+.site-header {
+  border-bottom: 3px solid var(--ucla-blue);
+}---
+---
 @import "{{ site.theme }}";
 
 $ucla-blue: #2774AE;
