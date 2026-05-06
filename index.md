@@ -18,7 +18,7 @@ We provide high-precision machining and design assistance for research instrumen
     <h3>Rapid Prototyping</h3>
     <ul>
       <li>3D Printing</li>
-      <li>Waterjet Cutting</li>
+      <li>AutoCad design</li>
     </ul>
   </div>
 
