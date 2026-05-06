@@ -41,6 +41,22 @@ h1, h2, h3, h4 {
   font-weight: 700;
   font-size: 30px;
 }
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Add logo before the title text */
+.site-title::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/assets/images/ucla-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* Nav links */
 .site-nav .page-link {
