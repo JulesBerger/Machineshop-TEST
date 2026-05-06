@@ -34,7 +34,6 @@ h1, h2, h3, h4 {
   border-top: 0;
   border-bottom: 4px solid #FFD100;
   min-height: 72px;
-  line-height: 72px;
 }
 
 .site-header .wrapper {
@@ -50,7 +49,6 @@ h1, h2, h3, h4 {
   color: #ffffff !important;
   font-weight: 700;
   font-size: 22px;
-  letter-spacing: 0.2px;
   text-decoration: none;
 }
 
@@ -59,25 +57,11 @@ h1, h2, h3, h4 {
   display: inline-block;
   width: 34px;
   height: 34px;
-  background-image: url("/assets/images/logo_UCLA_white.png");
+  background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
-}
-
-.site-nav .page-link {
-  color: #ffffff !important;
-  font-weight: 500;
-  margin-left: 18px;
-}
-
-.site-nav .page-link:hover {
-  color: #FFD100 !important;
-}
-
-.site-nav .page-link:visited {
-  color: #ffffff !important;
 }
 
 /* General links */
