@@ -6,7 +6,10 @@
 /* UCLA colors */
 :root {
   --ucla-blue: #2774AE;
-  --ucla-gold: #FFB81C;
+  --ucla-darkblue: #003B5C;
+  --ucla-ligherblue: #8BB8E8;
+  --ucla-gold: #FFD100;
+  --ucla-darkgold: #FFB81C;
 }
 
 /* Typography (UCLA-like) */
@@ -47,16 +50,16 @@ h1, h2, h3, h4 {
 }
 
 .site-nav .page-link:hover {
-  color: var(--ucla-gold) !important;
+  color: var(--ucla-darkgold) !important;
 }
 
 /* General links */
 a {
-  color: var(--ucla-blue);
+  color: var(--ucla-darkblue);
 }
 
 a:hover {
-  color: var(--ucla-gold);
+  color: var(--ucla-ligherblue);
 }
 .wrapper {
   max-width: 1100px;
@@ -84,7 +87,7 @@ a:hover {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: var(--ucla-gold);
+  background: var(--ucla-lighterblue);
   transition: width 0.2s ease;
 }
 
