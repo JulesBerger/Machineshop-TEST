@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Safety & Training
+title: Shop Safety
 ---
 
 # Safety First
