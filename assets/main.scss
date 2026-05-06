@@ -30,43 +30,54 @@ h1, h2, h3, h4 {
 
 /* Header styling */
 .site-header {
-  background-color: var(--ucla-blue);
-  border-bottom: none;
-  padding: 15px 0;
+  background-color: #2774AE;
+  border-top: 0;
+  border-bottom: 4px solid #FFD100;
+  min-height: 72px;
+  line-height: 72px;
 }
 
-/* Site title */
-.site-title {
-  color: white !important;
-  font-weight: 700;
-  font-size: 30px;
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .site-title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
 }
 
-/* Add logo before the title text */
 .site-title::before {
   content: "";
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   background-image: url("/assets/images/ucla-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
 }
 
-/* Nav links */
 .site-nav .page-link {
-  color: white !important;
-  margin-left: 20px;
+  color: #ffffff !important;
   font-weight: 500;
+  margin-left: 18px;
 }
 
 .site-nav .page-link:hover {
-  color: var(--ucla-darkgold) !important;
+  color: #FFD100 !important;
+}
+
+.site-nav .page-link:visited {
+  color: #ffffff !important;
 }
 
 /* General links */
