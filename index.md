@@ -5,11 +5,31 @@
 ## Services & Capabilities
 We provide high-precision machining and design assistance for research instrumentation across the UCLA campus.
 
-| Precision Machining | Specialized Fabrication | Design Support |
-| :--- | :--- | :--- |
-| CNC Milling & Turning | TIG / MIG Welding | Manual Lathe Work |
-| 3D Printing/Rapid Prototyping | Waterjet Cutting | Training |
+<div class="ucla-grid">
+  <div class="ucla-card">
+    <h3>Precision Machining</h3>
+    <ul>
+      <li>CNC Milling & Turning</li>
+      <li>Wire EDM</li>
+    </ul>
+  </div>
 
+  <div class="ucla-card">
+    <h3>Rapid Prototyping</h3>
+    <ul>
+      <li>3D Printing</li>
+      <li>Waterjet Cutting</li>
+    </ul>
+  </div>
+
+  <div class="ucla-card">
+    <h3>Training Programs</h3>
+    <ul>
+      <li>Machine-Specific</li>
+      <li>General Training</li>
+    </ul>
+  </div>
+</div>
 ---
 
 ## Start a Project
