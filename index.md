@@ -37,7 +37,40 @@ We provide high-precision machining and design assistance for research instrumen
     </div>
   </a>
 </div>
+ -
+<div class="ucla-grid">
+  <a href="{{ '/training' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card">
+      <h3>Training</h3>
+      <ul>
+        <li>Shop Safety & Orientation</li>
+        <li>Mill & Lathe Certification</li>
+      </ul>
+    </div>
+  </a>
+
+  <a href="{{ '/3d-printing' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card">
+      <h3>3D Printing / Prototyping</h3>
+      <ul>
+        <li>FDM & SLA Printing</li>
+        <li>Rapid Design Iteration</li>
+      </ul>
+    </div>
+  </a>
+
+  <a href="{{ '/Precision Machinig' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card">
+      <h3>CNC, WireEDM, Lathe</h3>
+      <ul>
+        <li>Research-Grade Components</li>
+        <li>Aluminum, Steel, and Plastics</li>
+      </ul>
+    </div>
+  </a>
+</div>
 ---
+
 
 ## Start a Project
 To submit a work order, please fill out our [Project Request Form](URL-HERE) or visit us in **Kaplan Hall, Room A08**.
