@@ -1,11 +1,5 @@
 ![UCLA Machine Shop Interior](Hero_V2.jpg)
 
----
-
-## Services & Capabilities
-We provide high-precision machining and design assistance for research instrumentation across the UCLA campus.
-
----
 <div class="ucla-grid">
   <a href="{{ '/training' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card">
