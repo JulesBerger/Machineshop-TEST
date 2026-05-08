@@ -1,4 +1,15 @@
 title: UCLA Physical Sciences Machine Shop
+description: Precision instrumentation, design, and fabrication services.
+theme: minima
+google_analytics:
+show_downloads: false
+
+minima:
+  nav_pages:
+    - index.md
+    - equipment.md
+    - safety.md
+    - contact.mdtitle: UCLA Physical Sciences Machine Shop
 theme: minima
 url: ""
 baseurl: ""
