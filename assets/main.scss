@@ -66,7 +66,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   width: 34px;
   height: 34px;
-  background-image: url"{{ '/assets/images/logo_UCLA_white.png' | relative_url }}";
+  background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,14 +74,17 @@ h1, h2, h3, h4 {
 }
 
 .site-hero {
-  height: 50vh; /* Limits the height */
-  min-height: 300px; /* Ensures it doesn't get too squashed on mobile */
+  height: 45vh; /* Reduced from 50vh to bring cards up higher */
+  min-height: 300px;
   display: flex;
+  flex-direction: column; /* Allows stacking title/subtitle */
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  color: white;
+  text-align: center;
+}
 }
 
 /* General links */
@@ -128,10 +131,11 @@ a:hover {
 
 .ucla-grid {
   display: grid;
-  /* This creates 3 equal columns on desktop, 1 on mobile */
   grid-template-columns: repeat(3, 1fr); 
   gap: 24px;
-  margin-top: 30px;
+  margin-top: -40px; /* This "overlaps" the hero slightly to show cards early */
+  position: relative;
+  z-index: 10;
 }
 
 /* Specific styling for the action cards to make them pop */
@@ -161,7 +165,7 @@ a:hover {
 .ucla-card-link {
   text-decoration: none !important;
   color: inherit !important;
-  display: flex; /* Helps with equal height cards */
+  display: flex; /* Critical for equal height */
 }
 
 .ucla-card {
@@ -185,20 +189,21 @@ a:hover {
 }
 
 /* Card titles */
-.ucla-card h3 {
-  color: var(--ucla-darkblue);
-  margin-bottom: 12px;
-  font-size: 18px;
-  border-bottom: 2px solid var(--ucla-gold);
-  display: inline-block;
-  padding-bottom: 4px;
+.ucla-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  border-top: 5px solid var(--ucla-blue);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Allows content to push footer down */
 }
 
 /* List styling */
-.ucla-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.ucla-card ul, .ucla-card p {
+  flex-grow: 1;
 }
 
 .ucla-card li {
