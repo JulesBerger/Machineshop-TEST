@@ -9,7 +9,7 @@ baseurl: "/Machineshop-TEST"
 
 # Minima configuration
 minima:
-  social_links: [#] # Removes social icons from footer if not needed
+  social_links: [] # Removes social icons from footer if not needed
 
 # Build settings
 plugins:
