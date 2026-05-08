@@ -38,37 +38,44 @@ a:hover {
   background-color: var(--ucla-blue);
   border-top: 0;
   border-bottom: 4px solid var(--ucla-darkgold);
-  min-height: 72px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .site-header .wrapper {
   display: flex;
+  justify-content: center; /* Centers the logo and title */
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .site-title {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 28px; /* Slightly adjusted for the longer name */
   text-decoration: none;
+  letter-spacing: 0.5px;
 }
 
 .site-title::before {
   content: "";
   display: inline-block;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  flex-shrink: 0;
 }
 
+/* Completely remove the nav from view */
+.site-nav {
+  display: none;
+}
 .site-nav .page-link {
   color: #ffffff !important;
   font-weight: 500;
