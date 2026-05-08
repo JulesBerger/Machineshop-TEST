@@ -48,6 +48,7 @@ We provide high-precision machining and design assistance for research instrumen
       </ul>
     </div>
   </a>
+</div>
 
   <a href="{{ '/After-hours access' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card">
