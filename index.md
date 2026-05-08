@@ -39,19 +39,19 @@ We provide high-precision machining and design assistance for research instrumen
 </div>
  -
 <div class="ucla-grid">
-  <a href="{{ '/training' | relative_url }}" class="ucla-card-link">
+  <a href="{{ '/Start a Project' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card">
-      <h3>Training</h3>
+      <h3>Start a Project</h3>
       <ul>
-        <li>Shop Safety & Orientation</li>
-        <li>Mill & Lathe Certification</li>
+        <li>Follow this link to fill out a project request form</li>
+        <li> /li>
       </ul>
     </div>
   </a>
 
-  <a href="{{ '/3d-printing' | relative_url }}" class="ucla-card-link">
+  <a href="{{ '/After-hours access' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card">
-      <h3>3D Printing / Prototyping</h3>
+      <h3>After-hours access request</h3>
       <ul>
         <li>FDM & SLA Printing</li>
         <li>Rapid Design Iteration</li>
@@ -59,16 +59,6 @@ We provide high-precision machining and design assistance for research instrumen
     </div>
   </a>
 
-  <a href="{{ '/Precision Machinig' | relative_url }}" class="ucla-card-link">
-    <div class="ucla-card">
-      <h3>CNC, WireEDM, Lathe</h3>
-      <ul>
-        <li>Research-Grade Components</li>
-        <li>Aluminum, Steel, and Plastics</li>
-      </ul>
-    </div>
-  </a>
-</div>
 ---
 
 
