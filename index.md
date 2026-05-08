@@ -38,25 +38,17 @@ We provide high-precision machining and design assistance for research instrumen
   </a>
 </div>
  -
-<div class="ucla-grid">
-  <a href="{{ '/Start a Project' | relative_url }}" class="ucla-card-link">
-    <div class="ucla-card">
+<a href="{{ '/start-project' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card action-card">
       <h3>Start a Project</h3>
-      <ul>
-        <li>Follow this link to fill out a project request form</li>
-        <li> /li>
-      </ul>
+      <p>Submit your CAD files and project specs for review.</p>
     </div>
   </a>
-</div>
 
-  <a href="{{ '/After-hours access' | relative_url }}" class="ucla-card-link">
-    <div class="ucla-card">
-      <h3>After-hours access request</h3>
-      <ul>
-        <li>FDM & SLA Printing</li>
-        <li>Rapid Design Iteration</li>
-      </ul>
+  <a href="{{ '/after-hours' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card action-card">
+      <h3>After Hours Access</h3>
+      <p>Request keycard access for approved shop users.</p>
     </div>
   </a>
 </div>
