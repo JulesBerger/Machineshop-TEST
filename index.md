@@ -40,14 +40,21 @@ We provide high-precision machining and design assistance for research instrumen
 <a href="{{ '/start-project' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card action-card">
       <h3>Start a Project</h3>
-      <p>Submit your CAD files and project specs for review.</p>
+      <p>Submit CAD files and project specs for technical review.</p>
     </div>
   </a>
 
   <a href="{{ '/after-hours' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card action-card">
       <h3>After Hours Access</h3>
-      <p>Request keycard access for approved shop users.</p>
+      <p>Request keycard access for approved researchers and students.</p>
+    </div>
+  </a>
+
+  <a href="{{ '/gallery' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card action-card">
+      <h3>Shop Gallery</h3>
+      <p>View featured projects and our current machinery lineup.</p>
     </div>
   </a>
 </div>
