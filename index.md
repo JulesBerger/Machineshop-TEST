@@ -7,35 +7,35 @@ We provide high-precision machining and design assistance for research instrumen
 
 ---
 <div class="ucla-grid">
-  <div class="ucla-card">
-    <h3>Training & Shop Safety</h3>
-    <p>Comprehensive instruction for students and faculty on shop equipment.</p>
-    <ul>
-      <li>Basic Hand Tool Safety</li>
-      <li>Mill & Lathe Certification</li>
-      <li>Advanced CNC Programming</li>
-    </ul>
-  </div>
+  <a href="{{ '/training' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card">
+      <h3>Training</h3>
+      <ul>
+        <li>Shop Safety & Orientation</li>
+        <li>Mill & Lathe Certification</li>
+      </ul>
+    </div>
+  </a>
 
-  <div class="ucla-card">
-    <h3>3D Printing & Prototyping</h3>
-    <p>Fast turnaround for complex geometries and fit-testing models.</p>
-    <ul>
-      <li>FDM (PLA, PETG, Carbon Fiber)</li>
-      <li>Functional Part Testing</li>
-      <li>Laser etching</li>
-    </ul>
-  </div>
+  <a href="{{ '/3d-printing' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card">
+      <h3>3D Printing / Prototyping</h3>
+      <ul>
+        <li>FDM & SLA Printing</li>
+        <li>Rapid Design Iteration</li>
+      </ul>
+    </div>
+  </a>
 
-  <div class="ucla-card">
-    <h3>CNC Milling</h3>
-    <p>High-precision machining for research-grade components.</p>
-    <ul>
-      <li>3-Axis Precision Milling</li>
-      <li>Tolerances to ±0.001"</li>
-      <li>Aluminum, Steel, and Plastics</li>
-    </ul>
-  </div>
+  <a href="{{ '/cnc-milling' | relative_url }}" class="ucla-card-link">
+    <div class="ucla-card">
+      <h3>CNC Milling</h3>
+      <ul>
+        <li>Precision Machining</li>
+        <li>Research-Grade Components</li>
+      </ul>
+    </div>
+  </a>
 </div>
 ---
 
