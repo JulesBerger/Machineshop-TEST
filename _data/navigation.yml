@@ -1,2 +1,10 @@
 - name: Home
   link: /
+- name: Equipment
+  link: /equipment/
+- name: Safety
+  link: /safety/
+- name: Contact
+  link: /contact/
+- name: Training
+  link: /training/
