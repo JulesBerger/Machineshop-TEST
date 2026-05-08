@@ -5,31 +5,35 @@
 ## Services & Capabilities
 We provide high-precision machining and design assistance for research instrumentation across the UCLA campus.
 
+---
 <div class="ucla-grid">
   <div class="ucla-card">
+    <h3>Training & Shop Safety</h3>
+    <p>Comprehensive instruction for students and faculty on shop equipment.</p>
+    <ul>
+      <li>Basic Hand Tool Safety</li>
+      <li>Mill & Lathe Certification</li>
+      <li>Advanced CNC Programming</li>
+    </ul>
+  </div>
+
+  <div class="ucla-card">
+    <h3>3D Printing & Prototyping</h3>
+    <p>Fast turnaround for complex geometries and fit-testing models.</p>
+    <ul>
+      <li>FDM (PLA, PETG, Carbon Fiber)</li>
+      <li>Functional Part Testing</li>
+      <li>Laser etching</li>
+    </ul>
+  </div>
+
+  <div class="ucla-card">
     <h3>CNC Milling</h3>
+    <p>High-precision machining for research-grade components.</p>
     <ul>
-      <li>3-Axis & 4-Axis Capability</li>
-      <li>Tolerances to ±0.0005"</li>
-      <li>Haas VF-2 & VF-4 Fleet</li>
-    </ul>
-  </div>
-
-  <div class="ucla-card">
-    <h3>CNC Turning</h3>
-    <ul>
-      <li>Live Tooling</li>
-      <li>10" Max Diameter</li>
-      <li>Bar Feeding for Production</li>
-    </ul>
-  </div>
-
-  <div class="ucla-card">
-    <h3>Materials</h3>
-    <ul>
-      <li>6061 & 7075 Aluminum</li>
-      <li>303 & 316 Stainless Steel</li>
-      <li>Delrin & PEEK Plastics</li>
+      <li>3-Axis Precision Milling</li>
+      <li>Tolerances to ±0.001"</li>
+      <li>Aluminum, Steel, and Plastics</li>
     </ul>
   </div>
 </div>
