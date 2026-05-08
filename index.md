@@ -27,12 +27,12 @@ We provide high-precision machining and design assistance for research instrumen
     </div>
   </a>
 
-  <a href="{{ '/cnc-milling' | relative_url }}" class="ucla-card-link">
+  <a href="{{ '/Precision Machinig' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card">
-      <h3>CNC Milling</h3>
+      <h3>CNC, WireEDM, Lathe</h3>
       <ul>
-        <li>Precision Machining</li>
         <li>Research-Grade Components</li>
+        <li>Aluminum, Steel, and Plastics</li>
       </ul>
     </div>
   </a>
@@ -47,7 +47,7 @@ Fill out and upload your file(s) using [This form](URL-Here)
 
 *.3mf, .stl, .oltp, .stp, .step, .svg, .amf, .obj files supported* 
 
-## How to Request Access
+## After-hours access request
 You can request after hours and weekend access using [This Form](URL-HERE)
 *Shop Supervisor and PI sign-off required* 
 
@@ -61,7 +61,3 @@ You can request after hours and weekend access using [This Form](URL-HERE)
 **Monday – Friday:** 7:00 AM – 3:30 PM 
 **Closed:** 12:00 PM – 1:00 PM (Lunch)
 
----
-
-## 🔗 Quick Links
-[Shop Safety Manual](/safety) | [Equipment List](/equipment) | [Staff Directory](/staff) | [UCLA Physical Sciences](https://www.physicalsciences.ucla.edu)
