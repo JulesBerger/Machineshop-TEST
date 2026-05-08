@@ -40,7 +40,7 @@ a {
 
 .site-header .wrapper {
   display: flex;
-  justify-content: flex-start; /* Moves logo and title to the left */
+  justify-content: center; /* This centers the logo and text */
   align-items: center;
   width: 100%;
   padding: 0 20px;
@@ -52,18 +52,19 @@ a {
   gap: 15px;
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 28px; 
+  font-size: 24px; /* Adjusted size for the longer title */
   letter-spacing: 0.5px;
-  cursor: default; /* Signals this is no longer a link */
+  cursor: default;
   text-decoration: none;
+  text-align: center;
 }
 
 /* UCLA Logo in Header */
 .site-title::before {
   content: "";
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
   background-size: contain;
   background-repeat: no-repeat;
