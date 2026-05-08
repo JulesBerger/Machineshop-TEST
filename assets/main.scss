@@ -79,8 +79,11 @@ a:hover {
 
 /* Hero Section */
 .site-hero {
-  height: 45vh;
-  min-height: 300px;
+  /* Change 45vh to something smaller, like 30vh or 35vh */
+  height: 35vh; 
+  min-height: 250px; /* Prevents it from getting too squished on mobile */
+  max-height: 400px; /* Ensures it doesn't take over the whole screen on desktops */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +92,9 @@ a:hover {
   background-position: center;
   color: white;
   text-align: center;
+  
+  /* Adds a subtle dark overlay so white text stays readable on light shop photos */
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ '/assets/images/hero_bg.jpg' | relative_url }}");
 }
 
 /* Grid System - 3-column Layout */
