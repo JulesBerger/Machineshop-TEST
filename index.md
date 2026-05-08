@@ -36,8 +36,7 @@ We provide high-precision machining and design assistance for research instrumen
       </ul>
     </div>
   </a>
-</div>
- -
+
 <a href="{{ '/start-project' | relative_url }}" class="ucla-card-link">
     <div class="ucla-card action-card">
       <h3>Start a Project</h3>
