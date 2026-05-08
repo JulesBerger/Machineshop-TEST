@@ -56,8 +56,42 @@ body {
 }
 
 .ucla-card-link {
-  display: flex;
   text-decoration: none !important;
+  color: inherit !important;
+  display: flex;
+  transition: transform 0.3s ease; /* Smooth movement */
+}
+
+.ucla-card-link:hover {
+  transform: translateY(-10px); /* This creates the upward shift */
+}
+
+/* 2. The Yellow Glow (Hover Effect) */
+.ucla-card-link:hover .ucla-card {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  border-top-color: var(--ucla-gold); /* Changes the blue bar to gold on hover */
+}
+
+/* 3. The Title Highlight */
+.ucla-card h3 {
+  color: var(--ucla-darkblue);
+  border-bottom: 2px solid var(--ucla-gold); /* Always has a gold underline */
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.ucla-card-link:hover h3 {
+  color: var(--ucla-blue); /* Title turns UCLA Blue when hovering the card */
+}
+
+/* 4. Action Card (Special Yellow Card) */
+.action-card {
+  border-top: 5px solid var(--ucla-gold) !important;
+}
+
+.action-card:hover {
+  border-top-color: var(--ucla-darkgold) !important;
+}
 }
 
 .ucla-card {
