@@ -54,26 +54,12 @@
 </div>
 ---
 
-
-## Start a Project
-To submit a work order, please fill out our [Project Request Form](URL-HERE) or visit us in **Kaplan Hall, Room A08**.
-
-## 3D print request
-Fill out and upload your file(s) using [This form](URL-Here) 
-
-*.3mf, .stl, .oltp, .stp, .step, .svg, .amf, .obj files supported* 
-
-## After-hours access request
-You can request after hours and weekend access using [This Form](URL-HERE)
-*Shop Supervisor and PI sign-off required* 
-
 ## Shop Rates
 [**View Shop Rates**](/rates)
 
 ---
 
-## Location & Hours
-**Kaplan Hall, Room A08** 
+## Kaplan Hall, Room A08 
 **Monday – Friday:** 7:00 AM – 3:30 PM 
 **Closed:** 12:00 PM – 1:00 PM (Lunch)
 
