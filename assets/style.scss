@@ -1,70 +1,200 @@
 ---
 ---
-
 @import "minima";
 
 /* UCLA colors */
 :root {
   --ucla-blue: #2774AE;
+  --ucla-darkblue: #003B5C;
+  --ucla-lightblue: #8BB8E8;
   --ucla-gold: #FFD100;
+  --ucla-darkgold: #FFB81C;
 }
 
-/* Typography (UCLA-like) */
+/* Typography & Global */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
+  background-color: #f8f6f0;
 }
 
-/* Headings */
 h1, h2, h3, h4 {
   font-weight: 600;
   letter-spacing: 0.3px;
 }
 
-/* Header styling */
-.site-header {
-  background-color: var(--ucla-blue);
-  border-bottom: none;
-  padding: 10px 0;
-}
-
-/* Site title */
-.site-title {
-  color: white !important;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-/* Nav links */
-.site-nav .page-link {
-  color: white !important;
-  margin-left: 20px;
-  font-weight: 500;
-}
-
-.site-nav .page-link:hover {
-  color: var(--ucla-gold) !important;
-}
-
-/* General links */
 a {
-  color: var(--ucla-blue);
+  color: var(--ucla-darkblue);
 }
 
 a:hover {
-  color: var(--ucla-gold);
-}
-.wrapper {
-  max-width: 1100px;
-}
-.page-content {
-  padding-top: 30px;
+  color: var(--ucla-blue);
 }
 
-.post-content {
-  font-size: 17px;
+/* Header & Nav */
+.site-header {
+  background-color: var(--ucla-blue);
+  border-top: 0;
+  border-bottom: 4px solid var(--ucla-darkgold);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
 }
-body {
-  background-color: #f8fafc;
+
+.site-header .wrapper {
+  display: flex;
+  justify-content: center; /* Centers the logo and title */
+  align-items: center;
+  width: 100%;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 28px; /* Slightly adjusted for the longer name */
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.site-title::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Completely remove the nav from view */
+.site-nav {
+  display: none;
+}
+.site-nav .page-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.site-nav .page-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--ucla-lightblue);
+  transition: width 0.2s ease;
+}
+
+.site-nav .page-link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.site-hero {
+  height: 45vh;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+/* The Grid - Fixed 3-column Layout */
+.ucla-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px;
+  margin-top: -60px; /* Pulls cards up over hero */
+  position: relative;
+  z-index: 10;
+  padding-bottom: 40px;
+}
+
+/* Card Links & Equal Height Logic */
+.ucla-card-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: flex; /* Forces child .ucla-card to stretch */
+}
+
+.ucla-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  border-top: 5px solid var(--ucla-blue);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ucla-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.action-card {
+  border-top: 5px solid var(--ucla-gold) !important;
+}
+
+/* Card Content Styling */
+.ucla-card h3 {
+  color: var(--ucla-darkblue);
+  margin-bottom: 12px;
+  font-size: 20px;
+  border-bottom: 2px solid var(--ucla-gold);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.ucla-card ul, .ucla-card p {
+  flex-grow: 1; /* Makes all cards in a row the same height */
+  margin-top: 10px;
+}
+
+.ucla-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ucla-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 16px;
+}
+
+.ucla-card li:last-child {
+  border-bottom: none;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .ucla-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ucla-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wrapper {
+  max-width: 1100px;
 }
