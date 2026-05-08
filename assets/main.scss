@@ -12,7 +12,7 @@
   --ucla-darkgold: #FFB81C;
 }
 
-/* Typography */
+/* Typography & Global */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -20,44 +20,24 @@ body {
   background-color: #f8f6f0;
 }
 
-/* Headings */
 h1, h2, h3, h4 {
   font-weight: 600;
   letter-spacing: 0.3px;
 }
 
-/* Navigation */
-.site-nav {
-  line-height: 52px;
+a {
+  color: var(--ucla-darkblue);
 }
 
-.site-nav .page-link {
-  color: #ffffff !important;
-  font-weight: 500;
-  margin-left: 20px;
-  position: relative;
+a:hover {
+  color: var(--ucla-blue);
 }
 
-.site-nav .page-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: var(--ucla-lightblue);
-  transition: width 0.2s ease;
-}
-
-.site-nav .page-link:hover::after {
-  width: 100%;
-}
-
-/* Header styling */
+/* Header & Nav */
 .site-header {
-  background-color: #2774AE;
+  background-color: var(--ucla-blue);
   border-top: 0;
-  border-bottom: 4px solid #FFB81C;
+  border-bottom: 4px solid var(--ucla-darkgold);
   min-height: 72px;
 }
 
@@ -89,6 +69,29 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
+.site-nav .page-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.site-nav .page-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--ucla-lightblue);
+  transition: width 0.2s ease;
+}
+
+.site-nav .page-link:hover::after {
+  width: 100%;
+}
+
 /* Hero Section */
 .site-hero {
   height: 45vh;
@@ -103,22 +106,22 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-/* Grid Layout */
+/* The Grid - Fixed 3-column Layout */
 .ucla-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 24px;
-  margin-top: -60px; /* Stronger overlap to ensure cards are visible */
+  margin-top: -60px; /* Pulls cards up over hero */
   position: relative;
   z-index: 10;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
-/* Card Links - Vital for Alignment */
+/* Card Links & Equal Height Logic */
 .ucla-card-link {
   text-decoration: none !important;
   color: inherit !important;
-  display: flex; 
+  display: flex; /* Forces child .ucla-card to stretch */
 }
 
 .ucla-card {
@@ -138,12 +141,11 @@ h1, h2, h3, h4 {
   box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
-/* Action Card Variant */
 .action-card {
   border-top: 5px solid var(--ucla-gold) !important;
 }
 
-/* Card Content */
+/* Card Content Styling */
 .ucla-card h3 {
   color: var(--ucla-darkblue);
   margin-bottom: 12px;
@@ -151,16 +153,11 @@ h1, h2, h3, h4 {
   border-bottom: 2px solid var(--ucla-gold);
   display: inline-block;
   padding-bottom: 4px;
-  transition: color 0.2s ease;
-}
-
-.ucla-card-link:hover h3 {
-  color: var(--ucla-blue);
 }
 
 .ucla-card ul, .ucla-card p {
-  flex-grow: 1; /* Pushes everything to equal height */
-  margin-bottom: 0;
+  flex-grow: 1; /* Makes all cards in a row the same height */
+  margin-top: 10px;
 }
 
 .ucla-card ul {
@@ -169,7 +166,7 @@ h1, h2, h3, h4 {
 }
 
 .ucla-card li {
-  padding: 6px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #e5e7eb;
   font-size: 16px;
 }
@@ -180,169 +177,9 @@ h1, h2, h3, h4 {
 
 /* Responsiveness */
 @media (max-width: 900px) {
-  .ucla-grid { grid-template-columns: repeat(2, 1fr); margin-top: 20px; }
-}
-
-@media (max-width: 600px) {
-  .ucla-grid { grid-template-columns: 1fr; }
-}
-
-.wrapper {
-  max-width: 1100px;
-}---
----
-
-@import "minima";
-
-/* UCLA colors */
-:root {
-  --ucla-blue: #2774AE;
-  --ucla-darkblue: #003B5C;
-  --ucla-lightblue: #8BB8E8;
-  --ucla-gold: #FFD100;
-  --ucla-darkgold: #FFB81C;
-}
-
-/* Typography (UCLA-like) */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-}
-Body {
-  background-color: #f8f6f0;
-}
-
-/* Headings */
-h1, h2, h3, h4 {
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
-.site-nav {
-  line-height: 52px; /* Adjust to match your header height */
-}
-
-.site-nav .page-link {
-  color: #ffffff !important; /* Ensure nav text is white against the blue bg */
-  font-weight: 500;
-  margin-left: 20px;
-}
-
-/* Header styling */
-.site-header {
-  background-color: #2774AE;
-  border-top: 0;
-  border-bottom: 4px solid #FFB81C;
-  min-height: 72px;
-}
-
-.site-header .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-title {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 34px;
-  text-decoration: none;
-}
-
-.site-title::before {
-  content: "";
-  display: inline-block;
-  width: 34px;
-  height: 34px;
-  background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-shrink: 0;
-}
-
-.site-hero {
-  height: 45vh; /* Reduced from 50vh to bring cards up higher */
-  min-height: 300px;
-  display: flex;
-  flex-direction: column; /* Allows stacking title/subtitle */
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-}
-}
-
-/* General links */
-a {
-  color: var(--ucla-darkblue);
-}
-
-a:hover {
-  color: var(--ucla-blue);
-}
-.wrapper {
-  max-width: 1100px;
-}
-.page-content {
-  padding-top: 30px;
-}
-
-.post-content {
-  font-size: 17px;
-}
-.site-header .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.site-nav .page-link {
-  position: relative;
-}
-
-.site-nav .page-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: var(--ucla-lightblue);
-  transition: width 0.2s ease;
-}
-
-.site-nav .page-link:hover::after {
-  width: 100%;
-}
-
-.ucla-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 24px;
-  margin-top: -40px; /* This "overlaps" the hero slightly to show cards early */
-  position: relative;
-  z-index: 10;
-}
-
-/* Specific styling for the action cards to make them pop */
-.action-card {
-  border-top: 5px solid var(--ucla-gold) !important;
-  height: 100%;
-}
-
-.action-card h3 {
-  border-bottom: 2px solid var(--ucla-blue) !important;
-}
-
-/* Responsive fix: If the screen is too small for 3 columns, stack them */
-@media (max-width: 900px) {
   .ucla-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
   }
 }
 
@@ -352,56 +189,6 @@ a:hover {
   }
 }
 
-/* Ensure the links behave as blocks for the grid */
-.ucla-card-link {
-  text-decoration: none !important;
-  color: inherit !important;
-  display: flex; /* Critical for equal height */
-}
-
-.ucla-card {
-  width: 100%;
-}
-
-/* Enhancing the hover state since it's now a link */
-.ucla-card-link:hover .ucla-card {
-  transform: translateY(-8px); /* Lift a bit higher on hover */
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-  border-top-color: var(--ucla-gold); /* Optional: change border color on hover */
-}
-
-/* Ensure the title still looks like a title */
-.ucla-card h3 {
-  transition: color 0.2s ease;
-}
-
-.ucla-card-link:hover h3 {
-  color: var(--ucla-blue);
-}
-
-/* Card titles */
-.ucla-card {
-  background: white;
-  border-radius: 8px;
-  padding: 24px;
-  border-top: 5px solid var(--ucla-blue);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: all 0.2s ease;
-  width: 100%;
-  display: flex;
-  flex-direction: column; /* Allows content to push footer down */
-}
-
-/* List styling */
-.ucla-card ul, .ucla-card p {
-  flex-grow: 1;
-}
-
-.ucla-card li {
-  padding: 6px 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.ucla-card li:last-child {
-  border-bottom: none;
+.wrapper {
+  max-width: 1100px;
 }
