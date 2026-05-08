@@ -1,4 +1,4 @@
-![UCLA Machine Shop Interior](Hero_V2.jpg)
+![UCLA Machine Shop Interior](/images/Hero_V3.jpg)
 
 <div class="ucla-grid">
   <a href="{{ '/training' | relative_url }}" class="ucla-card-link">
