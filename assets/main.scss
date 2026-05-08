@@ -48,16 +48,15 @@ a:hover {
   align-items: center;
   width: 100%;
 }
-
 .site-title {
   display: flex;
   align-items: center;
   gap: 15px;
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 40px;
-  text-decoration: none;
+  font-size: 28px; 
   letter-spacing: 0.5px;
+  cursor: default; /* Removes the "pointer" hand icon when mousing over */
 }
 
 /* The UCLA Logo Injection */
@@ -79,11 +78,9 @@ a:hover {
 
 /* Hero Section */
 .site-hero {
-  /* Change 45vh to something smaller, like 30vh or 35vh */
-  height: 35vh; 
-  min-height: 250px; /* Prevents it from getting too squished on mobile */
-  max-height: 400px; /* Ensures it doesn't take over the whole screen on desktops */
-  
+  height: 30vh;      /* Fixed height relative to screen */
+  min-height: 200px;  /* Minimum size so it doesn't disappear */
+  max-height: 350px;  /* Prevents it from getting too tall on desktops */
   display: flex;
   flex-direction: column;
   align-items: center;
