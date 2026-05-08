@@ -11,10 +11,10 @@
   --ucla-darkgold: #FFB81C;
 }
 
-/* Typography & Global Resets */
+/* Typography & Global */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 18px; 
   line-height: 1.6;
   background-color: #f8f6f0;
 }
@@ -28,11 +28,7 @@ a {
   color: var(--ucla-darkblue);
 }
 
-a:hover {
-  color: var(--ucla-blue);
-}
-
-/* Header Styling - Centered with Logo and No Nav */
+/* Header Styling - Left Justified, Non-Link */
 .site-header {
   background-color: var(--ucla-blue);
   border-top: 0;
@@ -44,43 +40,45 @@ a:hover {
 
 .site-header .wrapper {
   display: flex;
-  justify-content: center; /* Perfect centering for just the logo and text */
+  justify-content: flex-start; /* Moves logo and title to the left */
   align-items: center;
   width: 100%;
+  padding: 0 20px;
 }
+
 .site-title {
   display: flex;
   align-items: center;
   gap: 15px;
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 42px; 
+  font-size: 28px; 
   letter-spacing: 0.5px;
-  cursor: default; /* Removes the "pointer" hand icon when mousing over */
+  cursor: default; /* Signals this is no longer a link */
+  text-decoration: none;
 }
 
-/* The UCLA Logo Injection */
+/* UCLA Logo in Header */
 .site-title::before {
   content: "";
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background-image: url("{{ '/assets/images/logo_UCLA_white.png' | relative_url }}");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* Navigation removal as requested */
 .site-nav {
-  display: none;
+  display: none; /* Removes nav menu items */
 }
 
-/* Hero Section */
+/* Hero Section - Compact Version */
 .site-hero {
-  height: 30vh;      /* Fixed height relative to screen */
-  min-height: 200px;  /* Minimum size so it doesn't disappear */
-  max-height: 350px;  /* Prevents it from getting too tall on desktops */
+  height: 30vh;      
+  min-height: 180px; 
+  max-height: 300px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,17 +87,15 @@ a:hover {
   background-position: center;
   color: white;
   text-align: center;
-  
-  /* Adds a subtle dark overlay so white text stays readable on light shop photos */
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("{{ '/assets/images/hero_bg.jpg' | relative_url }}");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("{{ '/assets/images/hero_bg.jpg' | relative_url }}");
 }
 
-/* Grid System - 3-column Layout */
+/* Grid System */
 .ucla-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: -60px; /* Overlaps onto the Hero section */
+  margin-top: -50px; /* Pulls cards slightly over the compact hero */
   position: relative;
   z-index: 10;
   padding-bottom: 40px;
@@ -111,7 +107,7 @@ a:hover {
   color: inherit !important;
   display: flex;
   transition: transform 0.3s ease;
-  backface-visibility: hidden; /* Smoother animation */
+  backface-visibility: hidden;
 }
 
 .ucla-card-link:hover {
@@ -143,7 +139,7 @@ a:hover {
   border-top-color: var(--ucla-darkgold) !important;
 }
 
-/* Card Content Styling */
+/* Card Titles */
 .ucla-card h3 {
   color: var(--ucla-darkblue);
   margin-bottom: 12px;
@@ -178,7 +174,7 @@ a:hover {
   border-bottom: none;
 }
 
-/* Responsive Adjustments */
+/* Responsive Scaling */
 @media (max-width: 900px) {
   .ucla-grid {
     grid-template-columns: repeat(2, 1fr);
