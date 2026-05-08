@@ -136,6 +136,29 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
+/* Reset link styles for the card wrapper */
+.ucla-card-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+}
+
+/* Enhancing the hover state since it's now a link */
+.ucla-card-link:hover .ucla-card {
+  transform: translateY(-8px); /* Lift a bit higher on hover */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  border-top-color: var(--ucla-gold); /* Optional: change border color on hover */
+}
+
+/* Ensure the title still looks like a title */
+.ucla-card h3 {
+  transition: color 0.2s ease;
+}
+
+.ucla-card-link:hover h3 {
+  color: var(--ucla-blue);
+}
+
 /* Card titles */
 .ucla-card h3 {
   color: var(--ucla-darkblue);
