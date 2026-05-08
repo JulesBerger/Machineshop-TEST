@@ -7,26 +7,29 @@ We provide high-precision machining and design assistance for research instrumen
 
 <div class="ucla-grid">
   <div class="ucla-card">
-    <h3>Precision Machining</h3>
+    <h3>CNC Milling</h3>
     <ul>
-      <li>CNC Milling & Turning</li>
-      <li>Wire EDM</li>
+      <li>3-Axis & 4-Axis Capability</li>
+      <li>Tolerances to ±0.0005"</li>
+      <li>Haas VF-2 & VF-4 Fleet</li>
     </ul>
   </div>
 
   <div class="ucla-card">
-    <h3>Rapid Prototyping</h3>
+    <h3>CNC Turning</h3>
     <ul>
-      <li>3D Printing</li>
-      <li>AutoCad design</li>
+      <li>Live Tooling</li>
+      <li>10" Max Diameter</li>
+      <li>Bar Feeding for Production</li>
     </ul>
   </div>
 
   <div class="ucla-card">
-    <h3>Training Programs</h3>
+    <h3>Materials</h3>
     <ul>
-      <li>Machine-Specific</li>
-      <li>General Training</li>
+      <li>6061 & 7075 Aluminum</li>
+      <li>303 & 316 Stainless Steel</li>
+      <li>Delrin & PEEK Plastics</li>
     </ul>
   </div>
 </div>
