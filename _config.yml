@@ -1,17 +1,16 @@
 title: UCLA Physical Sciences Machine Shop
-description: Precision instrumentation, design, and fabrication services.
+description: Precision instrumentation, design, and fabrication services for the UCLA research community.
 theme: minima
-google_analytics:
-show_downloads: false
 
-minima:
-  nav_pages:
-    - index.md
-    - equipment.md
-    - safety.md
-    - contact.mdtitle: UCLA Physical Sciences Machine Shop
-theme: minima
+# Leave these as "" if you are testing locally. 
+# If on GitHub Pages, baseurl should be "/your-repository-name"
 url: ""
 baseurl: ""
+
+# Minima configuration
+minima:
+  social_links: [] # Removes social icons from footer if not needed
+
+# Build settings
 plugins:
   - jekyll-feed
